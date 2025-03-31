@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-04-01 03:36:28 by Eclipse SUMO GUI Version 1.12.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="./dataset/test%2003/net.xml"/>
+        <route-files value="./dataset/test%2003/routes.xml"/>
+    </input>
+
+    <output>
+        <netstate-dump value="./dataset/test%2003/netstate.xml"/>
+        <tripinfo-output value="./dataset/test%2003/tripinfo.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+    </time>
+
+    <traci_server>
+        <remote-port value="59953"/>
+    </traci_server>
+
+</configuration>
+-->
+
+<netstate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netstate_file.xsd">
+    <timestep time="0.00">
+        <edge id="-946404518">
+            <lane id="-946404518_0">
+                <vehicle id="0" pos="2.04" speed="0.00"/>
+            </lane>
+        </edge>
+    </timestep>
+    <timestep time="1.00">
+        <edge id=":8760698747_4">
+            <lane id=":8760698747_4_0">
+                <vehicle id="0" pos="2.25" speed="2.25"/>
+            </lane>
+        </edge>
+        <edge id="911091546#2">
+            <lane id="911091546#2_0">
+                <vehicle id="1" pos="5.10" speed="0.00"/>
+            </lane>
+        </edge>
+    </timestep>
+</netstate>

@@ -1,0 +1,14 @@
+<configuration>
+    <input>
+        <net-file value="net.xml"/>
+        <route-files value="rou.xml"/>
+    </input>
+    <output>
+        <netstate-dump value="netstate.xml"/>
+        <tripinfo-output value="tripinfo.xml"/>
+    </output>
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+    </time>
+</configuration>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<routes>
+  <vehicle id="0" depart="0">
+    <route edges="-918349269#0 914857032#0 914857032#1"/>
+  </vehicle>
+  <vehicle id="1" depart="1">
+    <route edges="-918348944 -918350369#1 945073865"/>
+  </vehicle>
+  <vehicle id="2" depart="2">
+    <route edges="914857034#0 914857034#1 945072827"/>
+  </vehicle>
+  <vehicle id="3" depart="3">
+    <route edges="945072823 -945072823 -909914270#18"/>
+  </vehicle>
+  <vehicle id="4" depart="4">
+    <route edges="-945073866 945073866 -945073866"/>
+  </vehicle>
+  <vehicle id="5" depart="5">
+    <route edges="-909914270#10 909914270#10 -918344707"/>
+  </vehicle>
+  <vehicle id="6" depart="6">
+    <route edges="914857035#0 946716295 -946716295"/>
+  </vehicle>
+  <vehicle id="7" depart="7">
+    <route edges="945073869 -945073869 918349269#1"/>
+  </vehicle>
+  <vehicle id="8" depart="8">
+    <route edges="-946716295 -914857035#0 -914857034#2"/>
+  </vehicle>
+  <vehicle id="9" depart="9">
+    <route edges="918350369#0 918350369#1 918348944"/>
+  </vehicle>
+</routes>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-04-01 00:45:12 by Eclipse SUMO GUI Version 1.12.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="./dataset/ingolstadt21/ingolstadt21.net.xml"/>
+        <route-files value="./dataset/ingolstadt21/ingolstadt_routed.rou.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="./dataset/ingolstadt21/one.xml"/>
+        <tripinfo-output.write-unfinished value="true"/>
+    </output>
+
+    <time>
+        <begin value="57600.0"/>
+        <end value="61200.0"/>
+    </time>
+
+    <traci_server>
+        <remote-port value="49745"/>
+    </traci_server>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <tripinfo id="h2831c1:1" depart="57600.00" departLane="201089423#0_1" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="-1.00" arrivalLane="" arrivalPos="-1.00" arrivalSpeed="-1.00" duration="1.00" routeLength="0.00" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="0.00" rerouteNo="0" devices="tripinfo_h2831c1:1" vType="default_016" speedFactor="1.06" vaporized="end"/>
+</tripinfos>

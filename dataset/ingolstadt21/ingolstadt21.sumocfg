@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+
+    <!-- Đầu vào: mạng lưới và tuyến đường -->
+    <input>
+        <net-file value="ingolstadt21.net.xml"/>
+        <route-files value="ingolstadt_routed.rou.xml"/>
+    </input>
+
+    <!-- Thời gian mô phỏng -->
+    <time>
+        <begin value="57600.0"/>  <!-- Thời gian bắt đầu mô phỏng -->
+        <end value="61200.0"/>    <!-- Thời gian kết thúc mô phỏng -->
+    </time>
+
+    <!-- Đầu ra: Thông tin chuyến đi -->
+    <output>
+        <tripinfo-output value="one.xml"/>
+        <tripinfo-output.write-unfinished value="true"/>  <!-- Ghi lại các chuyến chưa hoàn thành -->
+    </output>
+
+</configuration>
