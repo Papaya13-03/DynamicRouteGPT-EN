@@ -77,7 +77,7 @@ def create_valid_route(edges, connections):
 
 # Chạy chương trình để tạo routes.xml
 
-dataset_path = "./dataset/test 03"
+dataset_path = "./dataset/test 02"
 net_file = f"{dataset_path}/net.xml"
 routes_file = f"{dataset_path}/routes.xml"
 

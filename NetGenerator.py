@@ -46,7 +46,7 @@ def adjust_net_xml(net_file):
         print(f"Lỗi: {e}")
 
 # Sử dụng hàm để điều chỉnh tệp net.xml
-dataset_path = "./dataset/test 03"
+dataset_path = "./dataset/test 02"
 osm_file = f"{dataset_path}/map.osm"
 net_file = f"{dataset_path}/net.xml"
 
