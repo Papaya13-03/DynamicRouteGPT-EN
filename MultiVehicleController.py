@@ -126,14 +126,15 @@ def gpt_decision(k_shortest_paths, traffic_light_count, estimated_time_list):
                         Based on a comprehensive assessment, path2 is selected.'
     '''
 
-    # response = get_deepseek_response(prompt)
+    response = get_deepseek_response(prompt)
 
-    # pattern = r"chose_path\s*=\s*\[([^\]]+)\]"
-    # match = re.search(pattern, response)
+    pattern = r"chose_path\s*=\s*\[([^\]]+)\]"
+    match = re.search(pattern, response)
 
-    # if match:
-    #     chose_path = re.findall(r"'(.*?)'", match.group(1))
-    #     return chose_path
+    if match:
+        chose_path = re.findall(r"'(.*?)'", match.group(1))
+        print("chose_path: ", chose_path)
+        return chose_path
 
     return k_shortest_paths[0]
 
@@ -159,6 +160,10 @@ def run_sumo_simulation(net_file, rou_file, cfg_file, tracking_vehicle_id):
             print("Tracking vehicle still in the simulation")
             traci.gui.setZoom('View #0', 1000)
             traci.gui.trackVehicle('View #0', tracking_vehicle_id)
+        else:
+            if len(vehicles) > 0:
+                traci.gui.setZoom('View #0', 1000)
+                traci.gui.trackVehicle('View #0', vehicles[0])
         
         for vi in vehicles:
             if vi not in traci.vehicle.getIDList():
@@ -174,7 +179,6 @@ def run_sumo_simulation(net_file, rou_file, cfg_file, tracking_vehicle_id):
             if str(current_edge).startswith(":"):
                 continue
 
-            print("Finding k shortest paths")
             k_shortest_paths = find_k_shortest_paths(net_data, current_edge, target_edge, 3)
             traffic_light_count = [count_traffic_lights(net_data, path, net_file) for path in k_shortest_paths]
             estimated_time_list = [get_estimate_time(path) for path in k_shortest_paths]
@@ -184,14 +188,11 @@ def run_sumo_simulation(net_file, rou_file, cfg_file, tracking_vehicle_id):
     traci.close()
 
 if __name__ == '__main__':
-    dataset_path = "./dataset/test 02"
+    dataset_path = "./dataset/hangzhou"
     net_file = f'{dataset_path}/net.xml'
     rou_file = f'{dataset_path}/routes.xml'
     cfg_file = f'{dataset_path}/config_file.sumocfg'
 
-    # net_file = './dataset/hangzhou/hangzhou.net.xml'
-    # rou_file = './dataset/hangzhou/hangzhou.rou.xml'
-    # cfg_file = './dataset/hangzhou/hangzhou.sumocfg'
     tracking_vehicle_id = '0'
 
     run_sumo_simulation(net_file, rou_file, cfg_file, tracking_vehicle_id)
