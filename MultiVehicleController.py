@@ -27,20 +27,72 @@ def get_shortest_path(net_data, start_edge, end_edge):
     path = net_data.getShortestPath(start_edge, end_edge)
     return path[0] if path else []
 
+
 def find_k_shortest_paths(net_data, start_edge, end_edge, k):
+    G = nx.DiGraph()
+
+    # Build graph from SUMO network
+    for edge in net_data.getEdges():
+        from_node = edge.getFromNode().getID()
+        to_node = edge.getToNode().getID()
+        length = edge.getLength()
+        G.add_edge(from_node, to_node, edge=edge.getID(), weight=length)
+
     start_node = net_data.getEdge(start_edge).getToNode().getID()
     end_node = net_data.getEdge(end_edge).getFromNode().getID()
 
-    paths = list(nx.shortest_simple_paths(G, start_node, end_node, weight="weight"))
+    # Get the shortest path using Dijkstra
+    paths = []
+    heap = []
+    
+    try:
+        shortest_path = nx.shortest_path(G, start_node, end_node, weight="weight")
+        paths.append(shortest_path)
+    except nx.NetworkXNoPath:
+        return []  # No path exists
 
+    # Find K shortest paths using Yen’s algorithm
+    for _ in range(k - 1):
+        for i in range(len(paths[-1]) - 1):
+            spur_node = paths[-1][i]
+            root_path = paths[-1][:i + 1]
+
+            # Remove edges used in previous paths
+            removed_edges = []
+            for path in paths:
+                if len(path) > i and path[:i + 1] == root_path:
+                    u, v = path[i], path[i + 1]
+                    if G.has_edge(u, v):
+                        removed_edges.append((u, v, G[u][v]['weight'], G[u][v]['edge']))
+                        G.remove_edge(u, v)
+
+            try:
+                spur_path = nx.shortest_path(G, spur_node, end_node, weight="weight")
+                new_path = root_path[:-1] + spur_path
+                heapq.heappush(heap, (nx.path_weight(G, new_path, weight="weight"), new_path))
+            except nx.NetworkXNoPath:
+                pass
+            
+            # Restore removed edges
+            for u, v, weight, edge in removed_edges:
+                G.add_edge(u, v, weight=weight, edge=edge)
+
+        if not heap:
+            break
+        
+        # Get the next best path
+        _, next_best_path = heapq.heappop(heap)
+        paths.append(next_best_path)
+
+    # Convert paths from nodes to edges
     k_paths = []
-    for path in paths[:k]:
-        edge_path = [start_edge]
+    for path in paths:
+        edge_path = [start_edge]  # Include start_edge
         for u, v in zip(path[:-1], path[1:]):
             edge_path.append(G[u][v]['edge'])
-        edge_path.append(end_edge)
+        edge_path.append(end_edge)  # Include end_edge
         k_paths.append(edge_path)
-    
+
     return k_paths
 
 def get_node_id(net_data, path):
@@ -177,6 +229,15 @@ def run_sumo_simulation(net_file, rou_file, cfg_file, tracking_vehicle_id):
 
             #Skip Intersection
             if str(current_edge).startswith(":"):
+                continue
+
+
+            lane_id = traci.vehicle.getLaneID(vi)
+            lane_pos = traci.vehicle.getLanePosition(vi)
+            lane_length = traci.lane.getLength(lane_id)
+
+            #If the vehicle is not at the end of the lane, skip it
+            if (lane_length - lane_pos) > 1.0:
                 continue
 
             k_shortest_paths = find_k_shortest_paths(net_data, current_edge, target_edge, 3)
