@@ -26,7 +26,7 @@ def generate_routes(net_file, routes_file):
         routes = ET.Element("routes")
 
         # Tạo một số phương tiện với lộ trình hợp lệ
-        num_vehicles = 10  # Số lượng phương tiện
+        num_vehicles = 100  # Số lượng phương tiện
         for i in range(num_vehicles):
             vehicle_id = f"{i}"  # ID của phương tiện
             depart_time = str(i)  # Thời gian khởi hành
@@ -65,7 +65,7 @@ def create_valid_route(edges, connections):
 
     # Tạo lộ trình bằng cách nối tiếp các đoạn đường hợp lệ
     current_edge = start_edge
-    while len(route_edges) < 3:  # Giới hạn số cạnh trong route
+    while len(route_edges) < 10:  # Giới hạn số cạnh trong route
         next_edges = connections.get(current_edge, [])
         if not next_edges:
             break  # Dừng nếu không có cạnh nối tiếp hợp lệ
@@ -77,7 +77,7 @@ def create_valid_route(edges, connections):
 
 # Chạy chương trình để tạo routes.xml
 
-dataset_path = "./dataset/test 02"
+dataset_path = "./dataset/HUST"
 net_file = f"{dataset_path}/net.xml"
 routes_file = f"{dataset_path}/routes.xml"
 
