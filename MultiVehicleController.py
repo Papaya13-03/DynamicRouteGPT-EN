@@ -10,8 +10,6 @@ import json
 import sys
 import re
 import heapq
-# from gpt4all import GPT4All
-# model = GPT4All("Meta-Llama-3-8B-Instruct.Q4_0.gguf") # downloads / loads a 4.66GB LLM
 
 load_dotenv()
 G = nx.DiGraph()
@@ -140,6 +138,8 @@ def get_deepseek_response(prompt):
         "Authorization": f"Bearer {deepseek_api_key}",
         "Content-Type": "application/json"  # Thêm Content-Type
     }
+    print(headers)
+
 
     response = requests.post(
         deepseek_api_url,

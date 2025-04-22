@@ -123,7 +123,7 @@ def get_estimate_time(path):
 
 def get_deepseek_response(prompt):
     deepseek_api_url = os.getenv("DEEPSEEK_API_URL")
-    deepseek_api_key = os.getenv("DEEPSEEK_API_KEY")
+    deepseek_api_key = "sk-b389ba3dc5664bcbbcdc4dbbae2ba4bb" #os.getenv("DEEPSEEK_API_KEY")
 
     body = {
         "model": "deepseek-chat",
