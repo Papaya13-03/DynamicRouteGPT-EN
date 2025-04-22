@@ -5,5 +5,7 @@ idna==3.10
 networkx==3.4.2
 python-dotenv==1.0.1
 requests==2.32.3
+sumolib==1.22.0
 tqdm==4.67.1
+traci==1.22.0
 urllib3==2.3.0
