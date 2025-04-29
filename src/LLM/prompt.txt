@@ -1,0 +1,12 @@
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: {k_shortest_paths}.
+Each route has a number of traffic lights: {traffic_light_count}.
+The estimated time to pass through these routes is {estimated_time_list}, in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: {vehicle_density_list}.
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'

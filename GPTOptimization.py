@@ -202,15 +202,9 @@ def run_sumo_simulation(net_file, rou_file, cfg_file, tracking_vehicle_id):
         time.sleep(0.1)
 
         vehicles = traci.vehicle.getIDList()
-
-        if tracking_vehicle_id in vehicles:
-            print("Tracking vehicle still in the simulation")
-            traci.gui.setZoom('View #0', 5000)
-            traci.gui.trackVehicle('View #0', tracking_vehicle_id)
-
         for vi in vehicles:
-            if vi != tracking_vehicle_id:
-                continue
+            # if vi != tracking_vehicle_id:
+            #     continue
 
             current_edge = traci.vehicle.getRoadID(vi)
             target_edge = traci.vehicle.getRoute(vi)[-1]
@@ -241,7 +235,7 @@ def run_sumo_simulation(net_file, rou_file, cfg_file, tracking_vehicle_id):
     traci.close()
 
 if __name__ == '__main__':
-    dataset_path = "./dataset/HUST"
+    dataset_path = "./dataset/hangzhou"
     net_file = f'{dataset_path}/net.xml'
     rou_file = f'{dataset_path}/routes.xml'
     cfg_file = f'{dataset_path}/config_file.sumocfg'

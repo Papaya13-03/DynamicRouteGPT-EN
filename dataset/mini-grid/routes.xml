@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Sun May 23 17:15:06 2021 by Eclipse SUMO duarouter Version 1.9.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="grid4x4.net.xml"/>
+        <route-files value="./trips/grid4x4_1400.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="./routes/grid4x4_1400.rou.xml"/>
+        <alternatives-output value="./routes/grid4x4_1400.rou.alt.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="0" depart="2.00">
+        <route edges="top2C3 C3D3 D3top3"/>
+    </vehicle>
+    <vehicle id="1" depart="6.00">
+        <route edges="right1D1 D1C1 C1B1 B1A1 A1A2 A2A3 A3left3"/>
+    </vehicle>
+    <vehicle id="2" depart="6.00">
+        <route edges="right2D2 D2C2 C2C3 C3top2"/>
+    </vehicle>
+    <vehicle id="3" depart="10.00">
+        <route edges="top2C3 C3C2 C2B2 B2B3 B3C3 C3top2"/>
+    </vehicle>
+    <vehicle id="4" depart="15.00">
+        <route edges="left3A3 A3A2 A2left2"/>
+    </vehicle>
+    <vehicle id="5" depart="23.00">
+        <route edges="bottom2C0 C0C1 C1C2 C2D2 D2right2"/>
+    </vehicle>
+    <vehicle id="6" depart="24.00">
+        <route edges="bottom0A0 A0left0"/>
+    </vehicle>
+    <vehicle id="7" depart="41.00">
+        <route edges="top1B3 B3B2 B2B1 B1A1 A1left1"/>
+    </vehicle>
+    <vehicle id="8" depart="48.00">
+        <route edges="bottom0A0 A0left0"/>
+    </vehicle>
+    <vehicle id="9" depart="50.00">
+        <route edges="left1A1 A1B1 B1B2 B2B3 B3top1"/>
+    </vehicle>
+    <vehicle id="10" depart="56.00">
+        <route edges="right2D2 D2C2 C2C1 C1C0 C0B0 B0A0 A0left0"/>
+    </vehicle>
+    <vehicle id="11" depart="57.00">
+        <route edges="top0A3 A3A2 A2B2 B2C2 C2C1 C1C0 C0bottom2"/>
+    </vehicle>
+    <vehicle id="12" depart="61.00">
+        <route edges="top0A3 A3left3"/>
+    </vehicle>
+    <vehicle id="13" depart="62.00">
+        <route edges="right3D3 D3D2 D2D1 D1right1"/>
+    </vehicle>
+</routes>

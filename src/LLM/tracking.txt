@@ -1,0 +1,2793 @@
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [[], [], []].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [0, 0, 0], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0, 0.0, 0.0].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given the provided data, all three routes have identical characteristics:  
+- **0 traffic lights**  
+- **0 seconds estimated time**  
+- **0.0 vehicle density**  
+
+Since there is no difference in delay or traffic conditions between the routes, the choice is arbitrary.  
+
+```python
+chose_path = [0]  # (or [1] or [2], all are equivalent)
+choice_reason = 'All routes have identical conditions (no traffic lights, zero delay, and no vehicle density). The choice is arbitrary.'
+```  
+
+**Note:** If additional context (e.g., road type, construction, or real-time events) were provided, the decision could be refined further.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [[], [], []].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [0, 0, 0], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0, 0.0, 0.0].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given the provided data, all three routes have identical characteristics:  
+- **0 traffic lights**  
+- **0 seconds estimated time**  
+- **0.0 vehicle density**  
+
+Since there is no difference in delay or traffic conditions between the routes, the choice is arbitrary.  
+
+```python
+chose_path = []  # All options are equivalent (empty list indicates no preference)
+choice_reason = 'All routes have identical conditions (0 traffic lights, 0s delay, 0.0 density). Choice is arbitrary.'
+```  
+
+**Note:** If this is a placeholder for dynamic input, ensure real-world values are substituted for meaningful decisions (e.g., prioritizing fewer lights, lower density, or shorter time).
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [154.29301053419033, 154.29301053419033, 154.29301053419033], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~154.29 seconds), and average vehicle density (~0.0029), there is no objective difference between them. Therefore, any of the routes would be equally optimal.
+
+### Output:
+```python
+chose_path = ['right2D2', 'D2C2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+Alternatively, you could choose any of the other two paths with the same reasoning. The choice is arbitrary since all metrics are equal.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [357.45568950491327, 357.45568950491327, 357.45568950491327], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~357.46 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them to influence the decision. Therefore, any of the routes would be equally optimal.
+
+chose_path = ['right1D1', 'D1C1']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option as there is no distinguishing factor.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [1087.3738338370542, 1087.3738338370542, 1087.3738338370542], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~1087.37 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to minimize delay or traffic issues. Therefore, any of the routes can be chosen arbitrarily.
+
+chose_path = ['right2D2', 'D2C2']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [1769.6376269297905, 1769.6376269297905, 1769.6376269297905], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~1769.64 seconds), and average vehicle density (~0.0029), there is no objective difference between them to influence the decision. Therefore, any of the routes would be equally optimal.
+
+### Output:
+```python
+chose_path = ['right1D1', 'D1C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first path.'
+``` 
+
+(Note: Since there is no meaningful difference, the choice is arbitrary. In practice, you could also implement a tiebreaker like shortest distance, familiarity, or other contextual factors if available.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [6622.711827131484, 6622.711827131484, 6622.711827131484], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (~6622.71 seconds), and average vehicle density (~0.0029), there is no objective difference between them to minimize delay or traffic issues. 
+
+Thus, any of the routes can be chosen arbitrarily. Here's the output:
+
+```python
+chose_path = ['right2D2', 'D2C2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Path chosen arbitrarily.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [154.29301053419033, 154.29301053419033, 154.29301053419033], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~154.29 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the options. Therefore, any of the routes can be chosen without impacting delay or traffic issues.
+
+chose_path = ['right2D2', 'D2C2']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [357.45568950491327, 357.45568950491327, 357.45568950491327], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~357.46 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them to influence the decision. Thus, any of the routes would be equally optimal.
+
+chose_path = ['right1D1', 'D1C1']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [1087.3738338370542, 1087.3738338370542, 1087.3738338370542], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~1087.37 seconds), and average vehicle density (~0.0029), there is no objective difference between them to minimize delay or traffic issues. Therefore, any of the routes would be equally optimal. 
+
+### Output:
+```
+chose_path = ['right2D2', 'D2C2']
+choice_reason = 'All routes are identical in traffic conditions, time, and density. Randomly selected the first option.'
+``` 
+
+(Note: Since all options are the same, the choice is arbitrary. The reason explains the lack of distinguishing factors.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [1769.6376269297905, 1769.6376269297905, 1769.6376269297905], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~1769.64 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them. Therefore, any of the routes can be chosen without impacting delay or traffic issues.
+
+chose_path = ['right1D1', 'D1C1']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [6622.711827131484, 6622.711827131484, 6622.711827131484], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~6622.71 seconds), and average vehicle density (~0.0029 vehicles per edge), there is no meaningful difference between the routes to optimize for delay or traffic issues. Therefore, any of the routes can be chosen arbitrarily.
+
+```python
+chose_path = ['right2D2', 'D2C2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [6769.1018611169975, 6769.1018611169975, 6769.1018611169975], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (6769.1018611169975 seconds), and average vehicle density (0.0029096834264432034), there is no objective difference between the routes to minimize delay or traffic issues. Therefore, any of the routes can be chosen arbitrarily.
+
+chose_path = ['right1D1', 'D1C1']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [38970.536432743225, 38970.536432743225, 38970.536432743225], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~38970 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them to influence the decision. Thus, any of the routes would yield the same outcome.
+
+chose_path = ['right2D2', 'D2C2']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [49756.78229883809, 49756.78229883809, 49756.78229883809], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~49756.78 seconds), and average vehicle density (~0.0029 vehicles per edge), there is no objective difference between them. Therefore, any of the routes would be equally optimal.
+
+### Output:
+```python
+chose_path = ['right1D1', 'D1C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+(Note: Since all options are the same, the choice is arbitrary. The first route is selected here for simplicity.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to optimize for delay or traffic issues. 
+
+Thus, any of the routes can be chosen arbitrarily. Here's the output:
+
+```python
+chose_path = ['right2D2', 'D2C2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Chose the first path arbitrarily.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [284671.1786552949, 284671.1786552949, 284671.1786552949], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (284671.18 seconds), and average vehicle density (0.0029), there is no objective difference between them to influence the decision. Therefore, any of the routes would be equally optimal.
+
+chose_path = ['right1D1', 'D1C1']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419.64 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them to influence the decision. Thus, any path can be chosen arbitrarily.
+
+chose_path = ['right2D2', 'D2C2']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029 vehicles per edge), there is no meaningful difference between them to influence the decision. Thus, any path can be chosen arbitrarily.
+
+chose_path = ['right1D1', 'D1C1']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419.64 seconds), and average vehicle density (~0.0029 vehicles per edge), there is no meaningful difference between the routes to optimize for delay or traffic issues. 
+
+Thus, any of the routes can be chosen arbitrarily. Here's the output:
+
+```python
+chose_path = ['right2D2', 'D2C2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them. Thus, any choice would yield the same outcome. 
+
+Output:
+```
+chose_path = ['right1D1', 'D1C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419.64 seconds), and average vehicle density (~0.0029 vehicles per edge), there is no meaningful difference between the routes to optimize for delay or traffic issues. 
+
+Thus, any of the routes can be chosen arbitrarily. 
+
+```python
+chose_path = ['right2D2', 'D2C2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Arbitrarily selecting the first option.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029 vehicles per edge), there is no objective difference between them to minimize delay or traffic issues. Therefore, any of the routes would be equally optimal.
+
+### Output:
+```python
+chose_path = ['right1D1', 'D1C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first path.'
+``` 
+
+(Note: The choice could also be the second or third path, as there is no meaningful difference.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029 vehicles per edge), there is no objective difference between them. Therefore, any of the routes would yield the same outcome in terms of delay and traffic issues.
+
+### Output:
+```python
+chose_path = ['right2D2', 'D2C2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option since no route is superior.'
+``` 
+
+Alternatively, you could choose any of the other two routes with the same reasoning. The choice is arbitrary in this case.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['left3A3', 'A3A2'], ['left3A3', 'A3A2'], ['left3A3', 'A3A2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [86.1840642852517, 86.1840642852517, 86.1840642852517], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (86.18 seconds), and average vehicle density (0.0029), there is no meaningful difference between them to influence the decision. Thus, any of the routes would be equally optimal.
+
+chose_path = ['left3A3', 'A3A2']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option since no route is better than the others.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them. Therefore, any choice would yield the same outcome.
+
+chose_path = ['right1D1', 'D1C1']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Arbitrarily selected the first option since no route is better than the others.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029 vehicles per edge), there is no meaningful difference between the routes to influence the decision. Therefore, any of the routes can be chosen arbitrarily.
+
+```python
+chose_path = ['right2D2', 'D2C2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['left3A3', 'A3A2'], ['left3A3', 'A3A2'], ['left3A3', 'A3A2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [1379.987692886439, 1379.987692886439, 1379.987692886439], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (1379.99 seconds), and average vehicle density (0.0029), there is no meaningful difference between the routes to optimize for delay or traffic issues. Therefore, any of the routes can be chosen arbitrarily.
+
+```python
+chose_path = ['left3A3', 'A3A2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Arbitrarily selecting the first option.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and vehicle density (0.0029 vehicles per edge), there is no meaningful difference between them. Therefore, any of the routes would be equally optimal.
+
+### Output:
+```python
+chose_path = ['right1D1', 'D1C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selecting the first option as there is no difference.'
+``` 
+
+(Note: The estimated time of ~286,419 seconds, or ~79.56 hours, is extremely unrealistic for a city road intersection. This suggests a possible error in the input data. In a real-world scenario, such values would warrant verification.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (286419.6400287977 seconds), and average vehicle density (0.0029096834264432034), there is no meaningful difference between them to influence the decision. Therefore, any of the routes can be chosen arbitrarily.
+
+chose_path = ['right2D2', 'D2C2']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['left3A3', 'A3A2'], ['left3A3', 'A3A2'], ['left3A3', 'A3A2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [4789.545530827113, 4789.545530827113, 4789.545530827113], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (4789.545530827113 seconds), and average vehicle density (0.0029096834264432034), there is no objective difference between them to favor one over the others. 
+
+Thus, the choice can be arbitrary. Here's the output:
+
+```
+chose_path = ['left3A3', 'A3A2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419.64 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to optimize for delay or traffic issues. 
+
+Thus, any of the routes can be chosen arbitrarily. 
+
+```python
+chose_path = ['right1D1', 'D1C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029 vehicles per edge), there is no objective difference between them to minimize delay or traffic issues. 
+
+Thus, the choice can be arbitrary. Here's the output:
+
+```python
+chose_path = ['right2D2', 'D2C2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419.64 seconds), and average vehicle density (~0.0029), there is no objective difference between them. Therefore, the choice can be arbitrary.
+
+```python
+chose_path = ['right1D1', 'D1C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them. Therefore, the choice can be arbitrary.
+
+chose_path = ['right2D2', 'D2C2']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and vehicle density (~0.0029 vehicles per edge), there is no meaningful difference between the routes to optimize for delay or traffic issues. 
+
+Thus, the choice can be arbitrary. Here's the output:
+
+```python
+chose_path = ['right1D1', 'D1C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them to influence the decision. Thus, any of the routes would yield the same outcome.
+
+```python
+chose_path = ['right2D2', 'D2C2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Random selection made as no route is superior.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419.64 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them to influence the decision. Thus, any path can be chosen arbitrarily.
+
+chose_path = ['right1D1', 'D1C1']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419.64 seconds), and average vehicle density (~0.0029 vehicles per edge), there is no meaningful difference between them. Therefore, any of the routes would yield the same outcome.
+
+```python
+chose_path = ['right2D2', 'D2C2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them. Therefore, any choice would yield the same result.
+
+### Output:
+```python
+chose_path = ['right1D1', 'D1C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+(Note: The estimated time of ~286,419 seconds, or roughly 3.3 days, seems unrealistic for a city intersection. If this is a simulation or data error, you may want to verify the input values.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029 vehicles per edge), there is no meaningful difference between them. Therefore, any of the routes can be chosen without impacting delay or traffic issues.
+
+chose_path = ['right2D2', 'D2C2']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.6400287977 seconds), and average vehicle density (0.0029096834264432034), there is no objective difference between them to favor one over the others. 
+
+Thus, the choice can be arbitrary. Here's the output:
+
+```python
+chose_path = ['right1D1', 'D1C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them. Therefore, any choice would yield the same outcome.
+
+chose_path = ['right2D2', 'D2C2']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [106.75314453035331, 106.75314453035331, 106.75314453035331], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~106.75 seconds), and average vehicle density (~0.00305), there is no meaningful difference between the options. Therefore, the choice can be arbitrary.
+
+chose_path = ['C3D3', 'D3top3']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary (first route selected by default).'  
+
+Alternatively, you could randomize the selection if desired, but the outcome would be functionally the same.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419.64 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them to influence the decision. Thus, any path can be chosen arbitrarily.
+
+```python
+chose_path = ['right1D1', 'D1C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (~286,419.64 seconds), and average vehicle density (~0.0029 vehicles per edge), there is no meaningful difference between the routes to influence the decision. 
+
+Thus, any of the routes can be chosen arbitrarily. Here's the output:
+
+```python
+chose_path = ['right2D2', 'D2C2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Arbitrarily selecting the first option.'
+``` 
+
+Note: The estimated time (~286,419.64 seconds or ~79.56 hours) is extremely high for a city road route, suggesting potential data or simulation anomalies. In a real-world scenario, such values would warrant verification.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [606.6966846326944, 606.6966846326944, 606.6966846326944], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~606.7 seconds), and average vehicle density (~0.00305), there is no meaningful difference between the routes to prioritize one over the others. 
+
+Thus, any of the routes can be chosen arbitrarily. Here's the output:
+
+```
+chose_path = ['C3D3', 'D3top3']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Path chosen arbitrarily.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029), there is no meaningful difference between them. Therefore, any of the routes can be chosen without impacting delay or traffic issues.
+
+chose_path = ['right1D1', 'D1C1']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option since no route is better than the others.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419.64 seconds), and average vehicle density (~0.0029 vehicles per edge), there is no objective difference between the routes to minimize delay or traffic issues. 
+
+Thus, the choice can be arbitrary. Here's the output:
+
+```python
+chose_path = ['right2D2', 'D2C2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+``` 
+
+(Note: The estimated time of ~286,419 seconds, or roughly 3.3 days, seems extremely high for a city intersection. If this is a simulation or hypothetical scenario, the logic holds. Otherwise, the input data may need verification.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [1837.3465164753318, 1837.3465164753318, 1837.3465164753318], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~1837.35 seconds), and average vehicle density (~0.00305 vehicles per edge), there is no meaningful difference between them. Therefore, any of the routes would be equally optimal.
+
+### Output:
+```python
+chose_path = ['C3D3', 'D3top3']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+Alternatively, you could choose any of the other two routes since they are identical. The reason remains the same.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right1D1', 'D1C1'], ['right1D1', 'D1C1'], ['right1D1', 'D1C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029), there is no meaningful difference between them. Therefore, the choice can be arbitrary.
+
+```python
+chose_path = ['right1D1', 'D1C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['right2D2', 'D2C2'], ['right2D2', 'D2C2'], ['right2D2', 'D2C2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (~286,419.64 seconds), and average vehicle density (~0.0029 vehicles per edge), there is no meaningful difference between the routes to influence the decision. 
+
+### Output:
+```python
+chose_path = ['right2D2', 'D2C2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option since no route is objectively better.'
+``` 
+
+### Additional Note:
+The estimated time (~286,419.64 seconds or ~3.3 days) is extremely high for a typical city intersection. This suggests either:
+1. A simulation or data error, or  
+2. An unusually congested or blocked route (e.g., construction, accident).  
+If this is a real-world scenario, further verification (e.g., traffic alerts, alternate paths) is strongly recommended.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [5210.075797868291, 5210.075797868291, 5210.075797868291], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~5210 seconds), and vehicle density (~0.00305), there is no meaningful difference between them to influence the decision. Therefore, any of the routes would be equally optimal.
+
+chose_path = ['C3D3', 'D3top3']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option since no route is better than the others.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [359.6800342354129, 359.6800342354129, 359.6800342354129], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (~359.68 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to influence the decision. Therefore, any of the routes can be chosen without impacting delay or traffic issues.
+
+### Output:
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+Alternatively, you could choose any of the other two routes with the same reasoning. The choice is arbitrary in this case.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [25828.747591324478, 25828.747591324478, 25828.747591324478], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (25828.747591324478 seconds), and average vehicle density (0.003054740957966764), there is no objective difference between them to favor one over the others. Therefore, any of the routes would be equally optimal.
+
+### Output:
+```python
+chose_path = ['C3D3', 'D3top3']
+choice_reason = 'All routes are identical in traffic conditions, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+(Note: Since all options are the same, the choice is arbitrary. The reason explains the lack of distinguishing factors.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [2230.0248014816348, 2230.0248014816348, 2230.0248014816348], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (~2230 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to influence the decision. Thus, any of the routes can be chosen arbitrarily.
+
+chose_path = ['bottom2C0', 'C0C1']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [86022.48008121361, 86022.48008121361, 86022.48008121361], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (86022.48 seconds), and average vehicle density (0.00305), there is no meaningful difference between them. Therefore, any of the routes would yield the same outcome in terms of delay and traffic issues.
+
+### Output:
+```python
+chose_path = ['C3D3', 'D3top3']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+Alternatively, you could choose any of the three since they are identical. The reason remains the same.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [14352.537940313854, 14352.537940313854, 14352.537940313854], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (14352.54 seconds), and average vehicle density (0.0029 vehicles per edge), there is no objective difference between the routes to minimize delay or traffic issues. Therefore, any of the routes can be chosen arbitrarily.
+
+chose_path = ['bottom2C0', 'C0C1']  
+choice_reason = 'All routes are identical in traffic conditions, time, and density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [272820.619150468, 272820.619150468, 272820.619150468], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (272820.619150468 seconds), and average vehicle density (0.003054740957966764), there is no objective difference between them to minimize delay or traffic issues. Therefore, any of the routes would be equally optimal.
+
+### Output:
+```python
+chose_path = ['C3D3', 'D3top3']
+choice_reason = 'All routes are identical in traffic conditions, time, and density. Randomly selected the first option.'
+``` 
+
+Alternatively, you could choose any of the three paths since they are identical. The reason would remain the same. For example:
+```python
+chose_path = ['C3D3', 'D3top3']  # Or the second or third, as they are the same
+choice_reason = 'No differentiating factors between routes; all have identical metrics.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3C2', 'C2B2'], ['C3C2', 'C2B2'], ['C3C2', 'C2B2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [89.80109513175496, 89.80109513175496, 89.80109513175496], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~89.80 seconds), and average vehicle density (~0.00305), there is no meaningful difference between them. Therefore, any of the routes would be equally optimal.
+
+### Output:
+```python
+chose_path = ['C3C2', 'C2B2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+Alternatively, you could choose any of the other two paths since they are identical. The reason remains the same.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [31846.457915108203, 31846.457915108203, 31846.457915108203], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~31846 seconds), and vehicle density (~0.0029 vehicles per edge), there is no meaningful difference between the routes to optimize for delay or traffic issues. Thus, any of the routes can be chosen arbitrarily.
+
+chose_path = ['bottom2C0', 'C0C1']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Path chosen arbitrarily.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [272820.619150468, 272820.619150468, 272820.619150468], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (272820.619150468 seconds), and average vehicle density (0.003054740957966764), there is no meaningful difference between them to influence the decision. Therefore, any of the routes can be chosen arbitrarily.
+
+chose_path = ['C3D3', 'D3top3']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3C2', 'C2B2'], ['C3C2', 'C2B2'], ['C3C2', 'C2B2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [529.2313200152396, 529.2313200152396, 529.2313200152396], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~529.23 seconds), and average vehicle density (~0.00305), there is no meaningful difference between the routes to influence the decision. Therefore, any of the routes can be chosen arbitrarily.
+
+chose_path = ['C3C2', 'C2B2']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [136388.37862033135, 136388.37862033135, 136388.37862033135], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes have identical characteristics—no traffic lights (0 traffic lights), identical estimated travel times (~136,388 seconds), and identical average vehicle density (~0.0029 vehicles per edge)—there is no meaningful difference between the routes in terms of delay or traffic issues. 
+
+Thus, any of the routes can be chosen arbitrarily. Here is the output:
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Chose the first path arbitrarily.'
+``` 
+
+Alternatively, if you want to explicitly randomize the choice (since they are identical), you could use:
+
+```python
+import random
+chose_path = random.choice([['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']])
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Chose randomly.'
+``` 
+
+But since the paths are literally identical, the first approach is sufficient.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [272820.619150468, 272820.619150468, 272820.619150468], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in every measurable aspect (same path, same number of traffic lights, same estimated time, and same vehicle density), there is no objective difference between them to influence the decision. Thus, any of the routes would be equally optimal.
+
+chose_path = ['C3D3', 'D3top3']  
+choice_reason = 'All routes are identical in path, traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3C2', 'C2B2'], ['C3C2', 'C2B2'], ['C3C2', 'C2B2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [729.8966978963718, 729.8966978963718, 729.8966978963718], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~729.9 seconds), and average vehicle density (~0.00305), there is no objective difference between them. Therefore, any of the routes would be equally optimal. 
+
+### Output:
+```python
+chose_path = ['C3C2', 'C2B2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+Since there is no distinguishing factor, the choice is arbitrary. In practice, you could also consider other real-time factors (e.g., road conditions, accidents, or personal preference) if available.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to minimize delay or traffic issues. 
+
+Thus, any of the routes can be chosen arbitrarily. 
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Path chosen arbitrarily.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [272820.619150468, 272820.619150468, 272820.619150468], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (272820.619150468 seconds), and average vehicle density (0.003054740957966764), there is no objective difference between them to influence the decision. 
+
+### Output:
+```python
+chose_path = ['C3D3', 'D3top3']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+### Explanation:
+- Since all metrics are the same, the choice is arbitrary. The first path is selected by default.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3C2', 'C2B2'], ['C3C2', 'C2B2'], ['C3C2', 'C2B2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [18360.573764457524, 18360.573764457524, 18360.573764457524], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (18360.57 seconds), and average vehicle density (0.00305), there is no objective difference between them to favor one over the others. Thus, the choice can be arbitrary.
+
+chose_path = ['C3C2', 'C2B2']  
+choice_reason = 'All routes are identical in traffic conditions, time, and density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them. Thus, any choice would yield the same outcome.
+
+chose_path = ['bottom2C0', 'C0C1']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option since no route is better than the others.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [272820.619150468, 272820.619150468, 272820.619150468], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (272820.619150468 seconds), and average vehicle density (0.003054740957966764), there is no meaningful difference between them to influence the decision. Therefore, any of the routes would be equally optimal.
+
+### Output:
+```python
+chose_path = ['C3D3', 'D3top3']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+(Note: Since all options are the same, the choice is arbitrary. The reason explains the lack of distinguishing factors.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to minimize delay or traffic issues. 
+
+Since the routes are indistinguishable, the choice can be arbitrary. Here's the output:
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+``` 
+
+Note: The estimated time (~286,419 seconds or ~79.56 hours) is extremely high for a typical city intersection. This suggests either a data anomaly or a simulation/scenario with unusual parameters. In a real-world situation, such values would warrant verification.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [272820.619150468, 272820.619150468, 272820.619150468], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (272820.619150468 seconds), and average vehicle density (0.003054740957966764), there is no objective difference between them to minimize delay or traffic issues. Therefore, any of the routes would be equally optimal.
+
+### Output:
+```python
+chose_path = ['C3D3', 'D3top3']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Arbitrarily selected the first option.'
+``` 
+
+(Note: The choice could also be the second or third path, as there is no meaningful difference.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029), there is no meaningful difference between the routes to optimize for delay or traffic issues. 
+
+### Output:
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Arbitrarily selecting the first path.'
+``` 
+
+### Explanation:
+- Since all metrics are equal, the choice is effectively random. The first path is selected as a default. In practice, other factors (e.g., real-time traffic updates, road conditions, or driver preference) would be needed to make a meaningful decision.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [272820.619150468, 272820.619150468, 272820.619150468], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (272820.619150468 seconds), and average vehicle density (0.003054740957966764), there is no meaningful difference between them to influence the decision. Thus, any of the routes would yield the same outcome.
+
+```python
+chose_path = ['C3D3', 'D3top3']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them. Therefore, any of the routes would yield the same outcome in terms of delay and traffic issues.
+
+### Output:
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+### Note:
+The estimated time (~286,419 seconds or ~79.56 hours) is extremely high for a typical city route, suggesting a possible error in the input data. If this is unintended, you may want to verify the values. Otherwise, the choice is arbitrary since all options are the same.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [272820.619150468, 272820.619150468, 272820.619150468], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (272820.619150468 seconds), and average vehicle density (0.003054740957966764), there is no meaningful difference between them to influence the decision. Thus, any of the routes would yield the same outcome.
+
+chose_path = ['C3D3', 'D3top3']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029), there is no meaningful difference between them to influence the decision. Thus, any of the routes would be equally optimal.
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [272820.619150468, 272820.619150468, 272820.619150468], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (272820.619150468 seconds), and average vehicle density (0.003054740957966764), there is no meaningful difference between them to influence the decision. Thus, any of the routes can be chosen arbitrarily.
+
+```python
+chose_path = ['C3D3', 'D3top3']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the options. Thus, any choice would yield the same outcome.
+
+chose_path = ['bottom2C0', 'C0C1']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option as there is no advantage to any path.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['C3D3', 'D3top3'], ['C3D3', 'D3top3'], ['C3D3', 'D3top3']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [272820.619150468, 272820.619150468, 272820.619150468], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (272820.619150468 seconds), and average vehicle density (0.003054740957966764), there is no objective difference between them to minimize delay or traffic issues. Therefore, any of the routes can be chosen arbitrarily.
+
+chose_path = ['C3D3', 'D3top3']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to optimize for delay or traffic issues. 
+
+Thus, any of the routes can be chosen arbitrarily. Here's the output:
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Path chosen arbitrarily.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to influence the decision. Thus, any of the routes can be chosen arbitrarily.
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them. Therefore, any of the routes would yield the same outcome in terms of delay or traffic issues.
+
+### Output:
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+### Additional Note:
+The estimated time (~286,419 seconds or ~79.56 hours) seems unrealistically high for a typical city intersection. This may indicate an error in the input data or simulation parameters. If this is unexpected, you may want to verify the calculations or context.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to minimize delay or traffic issues. The choice is arbitrary in this case.
+
+chose_path = ['bottom2C0', 'C0C1']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to minimize delay or traffic issues. 
+
+Thus, any of the routes can be chosen arbitrarily. Here's the output:
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Arbitrarily selecting the first option.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to influence the decision. Thus, any of the routes can be chosen arbitrarily.
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['top1B3', 'B3B2'], ['top1B3', 'B3B2'], ['top1B3', 'B3B2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [215.2915199938939, 215.2915199938939, 215.2915199938939], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~215.29 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to influence the decision. Thus, any of the routes can be chosen without affecting delay or traffic issues.
+
+chose_path = ['top1B3', 'B3B2']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029 vehicles per edge), there is no meaningful difference between the routes. Therefore, any of them can be chosen without impacting delay or traffic issues.
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['top1B3', 'B3B2'], ['top1B3', 'B3B2'], ['top1B3', 'B3B2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [17952.56766124277, 17952.56766124277, 17952.56766124277], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (17952.57 seconds), and average vehicle density (0.0029 vehicles per edge), there is no meaningful difference between the routes to minimize delay or traffic issues. 
+
+Thus, any of the routes can be chosen arbitrarily. 
+
+Output:
+```
+chose_path = ['top1B3', 'B3B2']
+choice_reason = 'All routes are identical in traffic conditions, time, and density; choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes have identical characteristics—no traffic lights, the same estimated time, and the same average vehicle density—there is no objective difference between them in terms of delay or traffic issues. Therefore, any of the routes would be equally optimal.
+
+### Output:
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in terms of traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+``` 
+
+Alternatively, you could randomize the selection if needed, but the reasoning remains the same.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['top1B3', 'B3B2'], ['top1B3', 'B3B2'], ['top1B3', 'B3B2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [72611.59976294728, 72611.59976294728, 72611.59976294728], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~72611.6 seconds), and average vehicle density (~0.0029 vehicles per edge), there is no meaningful difference between the routes to influence the decision. Therefore, any of the routes can be chosen arbitrarily.
+
+chose_path = ['top1B3', 'B3B2']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029), there is no meaningful difference between them to influence the decision. Thus, any of the routes can be chosen arbitrarily.
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['top1B3', 'B3B2'], ['top1B3', 'B3B2'], ['top1B3', 'B3B2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029 vehicles per edge), there is no objective difference between them to minimize delay or traffic issues. Therefore, any of the routes would be equally suitable.
+
+### Output:
+```python
+chose_path = ['top1B3', 'B3B2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+(Note: Since all options are the same, the choice is arbitrary. The reason explains the lack of differentiating factors.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (all have 0), estimated time (all ~286,419.64 seconds), and average vehicle density (all ~0.0029 vehicles per edge), there is no meaningful difference between the routes to minimize delay or traffic issues. 
+
+Thus, any of the routes can be chosen arbitrarily. Here's the output:
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['top1B3', 'B3B2'], ['top1B3', 'B3B2'], ['top1B3', 'B3B2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419.64 seconds), and average vehicle density (~0.0029 vehicles per edge), there is no meaningful difference between the routes. Therefore, any choice would yield the same outcome.
+
+### Output:
+```python
+chose_path = ['top1B3', 'B3B2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first path.'
+``` 
+
+(Note: The estimated time of ~286,419 seconds, or roughly 3.3 days, is extremely unrealistic for a city road intersection. This suggests either a data error or a hypothetical scenario. In practice, such values would warrant verification.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029 vehicles per edge), there is no objective difference between the routes to minimize delay or traffic issues. 
+
+Thus, the choice can be arbitrary. Here's the output:
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+``` 
+
+(Note: The estimated time of ~286,419 seconds, or roughly 3.3 days, is extremely unrealistic for a typical city intersection. This suggests the input data may be erroneous or simulated for testing purposes.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['top1B3', 'B3B2'], ['top1B3', 'B3B2'], ['top1B3', 'B3B2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286419.64 seconds), and average vehicle density (~0.0029 vehicles per edge), there is no meaningful difference between the routes to minimize delay or traffic issues. 
+
+Thus, any of the routes can be chosen arbitrarily. Here's the output:
+
+```python
+chose_path = ['top1B3', 'B3B2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Chose arbitrarily (first option).'
+``` 
+
+Alternatively, you could also choose any of the other two routes since they are identical. The reason would remain the same.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom0A0', 'A0left0'], ['bottom0A0', 'A0left0'], ['bottom0A0', 'A0left0']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [76.66623292693322, 76.66623292693322, 76.66623292693322], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (76.67 seconds), and vehicle density (0.0029), there is no meaningful difference between the routes to influence the decision. 
+
+### Output:
+```python
+chose_path = ['bottom0A0', 'A0left0']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Arbitrarily selecting the first option.'
+``` 
+
+Since there is no distinguishing factor, the choice is effectively random. In practice, you could also consider other real-world factors (e.g., road conditions, familiarity, or slight variations not captured in the data), but based on the given information, the paths are equivalent.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to optimize for delay or traffic issues. 
+
+Thus, any of the routes can be chosen arbitrarily. 
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Arbitrarily selecting the first option.'
+``` 
+
+(Note: The estimated time of ~286,419 seconds is extremely high—equivalent to ~3.3 days—which suggests a possible error in the input data or simulation. In practice, such values would warrant verification.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['top1B3', 'B3B2'], ['top1B3', 'B3B2'], ['top1B3', 'B3B2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419.64 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them. Therefore, any choice would yield the same outcome.
+
+### Output:
+```python
+chose_path = ['top1B3', 'B3B2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+(Note: Since there is no distinguishing factor, the choice is arbitrary. In practice, you might consider other real-time factors like road conditions or unexpected events, but these are not provided here.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom0A0', 'A0left0'], ['bottom0A0', 'A0left0'], ['bottom0A0', 'A0left0']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [452.42938946322363, 452.42938946322363, 452.42938946322363], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~452.43 seconds), and average vehicle density (~0.0029), there is no objective difference between the routes to favor one over the others. Thus, the choice can be arbitrary.
+
+chose_path = ['bottom0A0', 'A0left0']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary (first route selected by default).'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and vehicle density (~0.0029), there is no meaningful difference between the routes to minimize delay or traffic issues. Thus, any of the routes can be chosen arbitrarily.
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['top1B3', 'B3B2'], ['top1B3', 'B3B2'], ['top1B3', 'B3B2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between them to influence the decision. Thus, any of the routes would yield the same outcome.
+
+```python
+chose_path = ['top1B3', 'B3B2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom0A0', 'A0left0'], ['bottom0A0', 'A0left0'], ['bottom0A0', 'A0left0']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [3677.542959307383, 3677.542959307383, 3677.542959307383], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~3677.54 seconds), and average vehicle density (~0.0029 vehicles per edge), there is no meaningful difference between the routes to influence the decision. Thus, any of the routes would yield the same outcome.
+
+### Output:
+```python
+chose_path = ['bottom0A0', 'A0left0']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+Alternatively, you could choose any of the three paths since they are indistinguishable in terms of the given metrics. The choice is arbitrary in this case.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to influence the decision. Thus, any of the routes can be chosen arbitrarily.
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['top1B3', 'B3B2'], ['top1B3', 'B3B2'], ['top1B3', 'B3B2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029 vehicles per edge), there is no objective difference between them. Therefore, any of the routes would yield the same outcome in terms of delay and traffic issues. 
+
+### Output:
+```python
+chose_path = ['top1B3', 'B3B2']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+Since there is no distinguishing factor, the choice is arbitrary. In practice, you might consider other real-time factors (e.g., road conditions, accidents, or personal preference) to break the tie, but these are not provided here.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom0A0', 'A0left0'], ['bottom0A0', 'A0left0'], ['bottom0A0', 'A0left0']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [4553.606770416765, 4553.606770416765, 4553.606770416765], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (4553.606770416765 seconds), and average vehicle density (0.0029096834264432034), there is no objective difference between them to favor one over the others. 
+
+Thus, the choice can be arbitrary. Here is the output:
+
+chose_path = ['bottom0A0', 'A0left0']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['D1C1', 'C1B1'], ['D1C1', 'C1B1'], ['D1C1', 'C1B1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [42.42134450262192, 42.42134450262192, 42.42134450262192], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (42.42 seconds), and average vehicle density (0.00305), there is no meaningful difference between them. Therefore, any of the routes would be equally optimal.
+
+### Output:
+```python
+chose_path = ['D1C1', 'C1B1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+(Note: Since all options are the same, the choice is arbitrary. The first route is selected here for simplicity.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three available routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to influence the decision. 
+
+### Decision:
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Arbitrarily selecting the first path since no optimization is possible.'
+```
+
+### Explanation:
+- **Traffic lights**: None (0) for all routes, so no delay from signals.
+- **Estimated time**: Identical (~286,419 seconds, which is unusually high but same for all).
+- **Vehicle density**: Identical and very low (~0.0029 vehicles per edge), indicating negligible traffic.  
+
+Since no route is better than the others, the choice is effectively random. The first route is selected by default. If the estimated time seems unrealistic (e.g., ~80 hours), verify the input data for errors.
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['top1B3', 'B3B2'], ['top1B3', 'B3B2'], ['top1B3', 'B3B2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029 vehicles per edge), there is no objective difference between them to minimize delay or traffic issues. Therefore, any of the routes would be equally suitable.
+
+chose_path = ['top1B3', 'B3B2']  
+choice_reason = 'All routes are identical in traffic conditions, time, and density. Randomly selected the first option as there is no difference in performance.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom0A0', 'A0left0'], ['bottom0A0', 'A0left0'], ['bottom0A0', 'A0left0']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [26498.012329230933, 26498.012329230933, 26498.012329230933], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (26498.012329230933 seconds), and average vehicle density (0.0029096834264432034), there is no objective difference between them to favor one over the others. 
+
+Thus, the choice can be arbitrary. Here's the output:
+
+```python
+chose_path = ['bottom0A0', 'A0left0']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['D1C1', 'C1B1'], ['D1C1', 'C1B1'], ['D1C1', 'C1B1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [272819.6400287977, 272819.6400287977, 272819.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.003054740957966764, 0.003054740957966764, 0.003054740957966764].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (272819.6400287977 seconds), and average vehicle density (0.003054740957966764), there is no objective difference between them to influence the decision. Therefore, any of the routes would be equally optimal.
+
+### Output:
+```python
+chose_path = ['D1C1', 'C1B1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option.'
+``` 
+
+(Note: The choice could also be the second or third path, as there is no meaningful difference. The reason would remain the same.)
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1'], ['bottom2C0', 'C0C1']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~286,419 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the routes to minimize delay or traffic issues. The choice is effectively arbitrary.
+
+```python
+chose_path = ['bottom2C0', 'C0C1']
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+```
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['top1B3', 'B3B2'], ['top1B3', 'B3B2'], ['top1B3', 'B3B2']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [286419.6400287977, 286419.6400287977, 286419.6400287977], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (286419.64 seconds), and average vehicle density (0.0029 vehicles per edge), there is no objective difference between them. Therefore, any of the routes would be equally optimal. 
+
+For the sake of completeness, I'll arbitrarily choose the first path, but the choice is functionally irrelevant.
+
+chose_path = ['top1B3', 'B3B2']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. The choice is arbitrary.'
+
+==================================================
+Prompt: 
+You are a driver operating a car on city roads.
+Now you have reached an intersection.
+You want to choose one of up to three available routes: [['bottom0A0', 'A0left0'], ['bottom0A0', 'A0left0'], ['bottom0A0', 'A0left0']].
+Each route has a number of traffic lights: [0, 0, 0].
+The estimated time to pass through these routes is [213307.29170168765, 213307.29170168765, 213307.29170168765], in seconds.
+The average vehicle density (number of vehicles per edge) for each route is: [0.0029096834264432034, 0.0029096834264432034, 0.0029096834264432034].
+
+Please choose the best path to minimize delay and traffic issues.
+
+Output format:
+chose_path = [...]
+choice_reason = '...'
+
+Response: 
+Given that all three routes are identical in terms of traffic lights (0), estimated time (~213,307 seconds), and average vehicle density (~0.0029), there is no meaningful difference between the options. Therefore, any choice would yield the same outcome.
+
+chose_path = ['bottom0A0', 'A0left0']  
+choice_reason = 'All routes are identical in traffic lights, estimated time, and vehicle density. Randomly selected the first option since no route is better than the others.'
+
+==================================================
